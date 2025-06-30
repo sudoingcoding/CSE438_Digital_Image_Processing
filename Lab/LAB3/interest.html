@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Arial', sans-serif;
+        }
+
+        main {
+            flex: 1;
+            padding: 2rem;
+            margin: 2rem;
+        }
+
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #f8f9fa !important;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: #0d6efd !important;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .service-item {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-item .icon img {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-item .name span {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="Homepage.html">MyPortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Homepage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skill.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="interest.html">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cocurricular.html">Co-curricular</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+            <h2 class="mb-4">My Interests</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqHIknnDmTFl3In08bcWIkGRHY0G83XZG9Ww&s" alt="Machine Learning Icon">
+                        </div>
+                        <div class="name">
+                            <span>Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="https://static.vecteezy.com/system/resources/previews/006/662/139/non_2x/artificial-intelligence-ai-processor-chip-icon-symbol-for-graphic-design-logo-web-site-social-media-mobile-app-ui-illustration-free-vector.jpg"
+                                alt="Blockchain Icon">
+                        </div>
+                        <div class="name">
+                            <span>Artificial Intelligence</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="data:image/png;base64,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" alt="Web development">
+                        </div>
+                        <div class="name">
+                            <span>Web Development</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR14hfaoqf6ml4HEtXN5WCVzlZhY0cnkL4Elw&s" alt="robotics">
+                        </div>
+                        <div class="name">
+                            <span>Robotics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; Suddip Paul Arnab, 2024. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Arial', sans-serif;
+        }
+
+        main {
+            flex: 1;
+            padding: 2rem;
+            margin: 2rem;
+        }
+
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #f8f9fa !important;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: #0d6efd !important;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .service-item {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-item .icon img {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-item .name span {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="Homepage.html">MyPortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Homepage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skill.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="interest.html">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cocurricular.html">Co-curricular</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+            <h2 class="mb-4">My Skills</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnc-l7SWXiBsBwDkgcF4I9bRQx-wGEnn1N4Q&s" alt="Problem Solving">
+                        </div>
+                        <div class="name">
+                            <span>Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="https://c8.alamy.com/comp/2DFY6E5/adaptability-icon-line-style-element-from-life-skills-collection-thin-adaptability-icon-for-templates-infographics-and-more-2DFY6E5.jpg"
+                                alt="Adaptability">
+                        </div>
+                        <div class="name">
+                            <span>Adaptability</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE-ci3MfNwezHdbc9D45COz098KXERW32xkQ&s" alt="programming">
+                        </div>
+                        <div class="name">
+                            <span>Programming</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="https://cdn3.vectorstock.com/i/1000x1000/35/82/office-communications-black-icon-concept-vector-29963582.jpg" alt="communication">
+                        </div>
+                        <div class="name">
+                            <span>Communication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; Suddip Paul Arnab, 2024. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
