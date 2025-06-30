@@ -1,0 +1,13 @@
+img = imread("Picture4.jpg");
+figure, imshow(img), title('Displayed Image');
+disp('Matrix form of the image:');
+disp(img); 
+impixelinfo;
+row = 10; col = 78;
+pixel_value = img(row, col, :);
+disp(['Pixel value at (10,78): ', num2str(pixel_value(:)')]); 
+image_size = size(img);
+disp(['Image Size: ', num2str(image_size)]);
+imfinfo_details = imfinfo("Picture4.jpg");
+disp('All image information:');
+disp(imfinfo_details);
