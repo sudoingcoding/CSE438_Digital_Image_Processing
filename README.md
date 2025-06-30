@@ -1,2 +1,2 @@
-# CSE347
-Information System Analysis and Design
+# CSE438
+Digital Image Processing
