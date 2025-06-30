@@ -1,0 +1,12 @@
+img = imread("Picture2.png");
+gray_img = rgb2gray(img);
+imshow(gray_img);
+binary_img1 = imbinarize(gray_img, 0.4); 
+binary_img2 = imbinarize(gray_img, 0.5); 
+binary_img3 = imbinarize(gray_img, 0.6); 
+subplot(2,2,1),imshow(binary_img1);
+title("Threshold 0.4");
+subplot(2,2,2),imshow(binary_img2);
+title("Threshold 0.5");
+subplot(2,2,3),imshow(binary_img3);
+title("Threshold 0.6");

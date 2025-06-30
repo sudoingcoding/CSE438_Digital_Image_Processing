@@ -1,0 +1,12 @@
+img = imread('Picture1.jpg');
+gray_img = rgb2gray(img);
+min_intensity = min(gray_img(:));
+max_intensity = max(gray_img(:));
+contrast_stretched_img = imadjust(gray_img, [min_intensity / 255, max_intensity / 255], [0 1]);
+figure;
+subplot(1, 2, 1);
+imshow(gray_img);
+title('Original Image');
+subplot(1, 2, 2);
+imshow(contrast_stretched_img);
+title('Contrast Stretched Image');

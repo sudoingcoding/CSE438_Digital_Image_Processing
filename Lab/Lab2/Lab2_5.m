@@ -1,0 +1,16 @@
+img = imread('Picture6.jpg'); 
+img = rgb2gray(img);  
+figure;
+subplot(2, 2, 1);
+imshow(img);
+title('Original Image');
+subplot(2, 2, 2);
+imhist(img);
+title('Histogram of Original Image');
+equalized_img = histeq(img);
+subplot(2, 2, 3);
+imshow(equalized_img);
+title('Equalized Image');
+subplot(2, 2, 4);
+imhist(equalized_img);
+title('Histogram of Equalized Image');
